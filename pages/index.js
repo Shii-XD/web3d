@@ -52,7 +52,7 @@ export default function Home() {
             <div
               key={model}
               onClick={() => setSelected(model)}
-              className={\`border px-4 py-2 rounded cursor-pointer transition hover:border-orange-400 \${selected === model ? 'bg-orange-500 text-black' : 'bg-gray-800'}\`}
+              className={`border px-4 py-2 rounded cursor-pointer transition hover:border-orange-400 ${selected === model ? 'bg-orange-500 text-black' : 'bg-gray-800'}`}
             >
               {model} {selected === model && '✔'}
             </div>
